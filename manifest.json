@@ -12,7 +12,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.google.com/*"],
-      "js": ["scripts.js"]
+      "css": ["chExt/css/styles.css"],
+      "js": ["scripts.js", "chExt/js/app.js"]
     }
   ]
 }

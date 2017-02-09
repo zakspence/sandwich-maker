@@ -2,12 +2,29 @@
 <html>
 <head>
     <title>Chrome Extension Boilerplate</title>
-    <link rel="stylesheet" type="text/css" href="/app/css/styles.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/chExt/css/styles.css">
 </head>
 <body>
-    <h1>Here's the browser pop-up!</h1>
-    <h2>Right-click > 'Inspect' to get to the built-in console</h2>
 
-    <script type="text/javascript" src="app/js/app.js"></script>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand inline-display" href="#">Dammit, Dean!</a>
+	      <div class="logo inline-display"><image src="img/logo.png"></div>
+	    </div>
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="jumbotron">
+	  <h3>Welcome to Dammit, Dean!</h3>
+	</div>
+
+    <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="chExt/js/app.js"></script>
 </body>
 </html>
