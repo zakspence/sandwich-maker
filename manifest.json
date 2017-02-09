@@ -11,7 +11,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*.casey-reed.com/*"],
+      "matches": ["*://*.google.com/*"],
       "js": ["scripts.js"]
     }
   ]

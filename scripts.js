@@ -1,5 +1,6 @@
-'use strict'
+'use strict';
 
 //Content Scripts go here
 
-console.log('scripts.js running')
+console.log('scripts.js running');
+
