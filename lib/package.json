@@ -18,7 +18,7 @@
     "console",
     "new"
   ],
-  "author": "Taylor Perkins",
+  "author": ["Taylor Perkins", "Zak Spence"],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/taylorperkins/chrome-extension-boilerplate/issues"
