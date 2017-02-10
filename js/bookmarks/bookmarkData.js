@@ -18,6 +18,16 @@ let myBookmarks = {
 
 let getBookmarks = () => myBookmarks;
 
+let removeBookmarks = (bookmark) => {
+	for (let category = 0; category < myBookmarks.categories.length; category++) {
+		if (bookmark === myBookmarks.categories[category].name) {
+			console.log("You could splice myBookmarks.categories.splice(myBookmarks.categories[category], 1); if you wanted to. BUT YOU WONT.")
+
+			// myBookmarks.categories.splice(myBookmarks.categories[category], 1);
+		}
+	}
+};
+
 
 module.exports = {getBookmarks};
 

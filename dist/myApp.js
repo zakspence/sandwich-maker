@@ -31,27 +31,46 @@ var myBookmarks = bookmarkData.getBookmarks();
 
 /*
 
-Display categories under #nav-dean logo in a dropdown
+Sets categories under #nav-dean logo in a dropdown
 */
 
 displayBookmarks.setCategories(myBookmarks);
 
 
+/*
+
+Opens categories dropdown whenever #nav-dean 
+button is clicked
+*/
+
 $('.trigger-button').click(function(event) {
-	event.stopPropagation();
 	$('.dropdown').toggleClass('open');
 });
 
 
+/*
+
+Closes categories dropdown, and displays an input field 
+so that you can upload your own categories.
+*/
 
 
-// document.addEventListener("keypress", function(event) {
-// 	console.log(event.target.value);
-// 	if(event.keyCode == 13){
-// 		console.log(event.target.value);
-// 		localStorage.setItem('userInput', event.target.value);
-// 	}
-// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,6 +104,14 @@ let myBookmarks = {
 
 let getBookmarks = () => myBookmarks;
 
+let removeBookmarks = (bookmark) => {
+	for (let category = 0; category < myBookmarks.categories.length; category++) {
+		if (bookmark === myBookmarks.categories[category].name) {
+			myBookmarks.categories.splice(myBookmarks.categories[category], 1);
+		}
+	}
+};
+
 
 module.exports = {getBookmarks};
 
@@ -104,7 +131,10 @@ let setCategories = (bookmarks) => {
 	console.log(bookmarks);
 	let dropdown = ``;
 	bookmarks.categories.forEach(function(category) {
-		dropdown  += `<li id="${category.name}" class="category-drop text-center" href="#">${category.name}</li>`;
+		dropdown  += `<li id="${category.name}" class="category-drop" href="#">
+						${category.name}
+						<span class="glyphicon glyphicon-remove inline-display"></span>
+					  </li>`;
 	});
 	$('.dropdown-menu').append(dropdown);
 };

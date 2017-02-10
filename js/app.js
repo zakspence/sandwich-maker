@@ -30,27 +30,46 @@ var myBookmarks = bookmarkData.getBookmarks();
 
 /*
 
-Display categories under #nav-dean logo in a dropdown
+Sets categories under #nav-dean logo in a dropdown
 */
 
 displayBookmarks.setCategories(myBookmarks);
 
 
+/*
+
+Opens categories dropdown whenever #nav-dean 
+button is clicked
+*/
+
 $('.trigger-button').click(function(event) {
-	event.stopPropagation();
 	$('.dropdown').toggleClass('open');
 });
 
 
+/*
+
+Closes categories dropdown, and displays an input field 
+so that you can upload your own categories.
+*/
 
 
-// document.addEventListener("keypress", function(event) {
-// 	console.log(event.target.value);
-// 	if(event.keyCode == 13){
-// 		console.log(event.target.value);
-// 		localStorage.setItem('userInput', event.target.value);
-// 	}
-// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

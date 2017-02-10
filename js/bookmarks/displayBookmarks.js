@@ -12,7 +12,10 @@ let setCategories = (bookmarks) => {
 	console.log(bookmarks);
 	let dropdown = ``;
 	bookmarks.categories.forEach(function(category) {
-		dropdown  += `<li id="${category.name}" class="category-drop text-center" href="#">${category.name}</li>`;
+		dropdown  += `<li id="${category.name}" class="category-drop" href="#">
+						${category.name}
+						<span class="glyphicon glyphicon-remove inline-display"></span>
+					  </li>`;
 	});
 	$('.dropdown-menu').append(dropdown);
 };
