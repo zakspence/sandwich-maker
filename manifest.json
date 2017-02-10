@@ -1,9 +1,10 @@
 {
   "name": "Chrome Extension Boilerplate",
-  "author": "Casey Reed",
+  "author": "Taylor Perkins and Zak Spence",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "",
+  "description": "This extension is designed to give developers bookmarks and challenges to
+                  improve their coding capabilities",
   "permissions": [
     "storage"
   ],
@@ -14,9 +15,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.google.com/*"],
-      "css": ["chExt/css/styles.css"],
-      "js": ["scripts.js", "chExt/js/app.js"]
+      "css": ["css/styles.css"],
+      "js": ["scripts.js", "js/app.js"]
     }
   ]
 }
-
